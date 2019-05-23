@@ -11,14 +11,14 @@ Tags: agile, software, toolchain, open source, escribing coverage, ops platforms
 
 @font-face {
   font-family: UniNeueRegular;
-  src:  url(../automat/fonts/UniNeueRegular.ttf) format('truetype'),
-  url(../automat/fonts/UniNeueRegular.otf) format('otf');
+  src:  url(fonts/UniNeueRegular.ttf) format('truetype'),
+  url(fonts/UniNeueRegular.otf) format('otf');
        
 }
 @font-face {
   font-family: UniNeueHeavy;
-  src:  url(../automat/fonts/UniNeueHeavy.ttf) format('truetype'),
-  url(../automat/fonts/UniNeueHeavy.otf) format('otf'); 
+  src:  url(fonts/UniNeueHeavy.ttf) format('truetype'),
+  url(fonts/UniNeueHeavy.otf) format('otf'); 
 }
 /*--------------------------------------------------------------
 # NORMALIZE
