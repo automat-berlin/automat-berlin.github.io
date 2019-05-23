@@ -208,14 +208,13 @@ section#page-not-found .description {
 	min-height:100vh;
 	position:relative;
 	float:left;
-	with:auto;
+	width:auto;
 }
 .site-header {
 	position:fixed;
 	width:100%;
 	padding: 46px 8.69vw;
 	background:#F6F6F6;
-	max-height:10vw;
 	z-index:9;
 }
 .site-content {
@@ -364,13 +363,6 @@ section {
 	padding-bottom:20px;
 }
 
-
-
-#factory.fixed {
-	transform: translateY(20px);
-	transition: all 2.5s ease-out;
-}
-
 #workshop  {
 	position:relative;
 	float:left;
@@ -378,13 +370,7 @@ section {
 	z-index:3;
 }
 
-#workshop.follow  {
-	transform: translateY(-20px);
-	
-	transition: all 3.5s ease-out;
-}
 #workshop .container-inner{
-	
 	top:auto;
 	display:flex;
 	flex-direction: row;
@@ -643,14 +629,12 @@ footer {
 	width: 100%;
 	float: left;
 	z-index:3;
-	margin-top:-2vw;
 }
 .copyright {
 	float: right;
 	text-align: right;
 	width: 100%;
 	padding: 2% 5vw  2% 2% ;
-	font-size: 1vw;
 }
 .back-to-top {
 	background: url(images/backtotop.svg);
@@ -791,8 +775,8 @@ ANIMATION
 
 @media screen and (max-width:900px) {
 	.site-header {
-		padding: 8.69vw 0 20px 8.69vw;
-		max-height: 60px;
+		padding: 6vw 0 20px 8.69vw;
+		height: 100px;
 	}
 	.main-navigation ul.menu.active .site-branding-menu-open {
 		display:block;
@@ -800,7 +784,7 @@ ANIMATION
 		top:0;
 		left:0;
 		z-index:99;
-		padding: 8.69vw 0 0 8.69vw;
+		padding: 6vw 0 0 8.69vw;
 	}
 	
 	/*--------------------------------------------------------------
@@ -864,7 +848,7 @@ ANIMATION
 	
 	.menu-toggle {
 		display:block;
-		top: 8.69vw;
+		top: 6vw;
 		z-index: 10;
 		right: 8.69vw;
 		width: 36px;
@@ -1014,7 +998,6 @@ ANIMATION
 	
 	.site-header {
 		height: 90px;
-		max-height:90px;
 	}
 	
 	.site-branding {
