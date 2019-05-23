@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>automat</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div id="page" class="site">
+		<header class="site-header">
+			<div id="logo" class="site-branding">
+				<a href="/"><img src="images/logo-automat.svg" alt="Automat-Logo"></a>
+			</div>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+				<div id="hamburger-menu" class="menu-toggle"><span>Menu</span></div>
+  <ul class="menu"><div id="menu-open-logo" class="site-branding-menu-open">
+				<a href="/"><img src="images/menu-open-logo.svg" alt="Automat-Logo klein"></a>
+			</div>
+					<li class="menu-item">
+						<a class="border-animation menu-anchor" href="index.html#factory">Factory</a>
+					</li>
+					<li class="menu-item">
+						<a class="border-animation menu-anchor" href="index.html#workshop">Workshop</a>
+					</li>
+	  				<li class="menu-item">
+						<a class="border-animation menu-anchor" href="#">Blog</a>
+					</li>
+					<li class="menu-item">
+						<a class="border-animation menu-anchor" href="imprint.html">Contact | Imprint</a>
+					</li>
+	  
+	  				<li class="menu-item mobile-only">
+						<a class="border-animation menu-anchor" href="404.html">404 :-)</a>
+					</li>
+				</ul>
+			</nav><!-- #site-navigation -->
+		
+		</header>
+		<div id="content" class="site-content">
+			<section class="first" id="page-not-found">
+				<h1>OOPS</h1>
+				<h2>Page not found</h2>
+				<span class="description">
+					Something went wrong. <br>
+					Go back to <a class="strong" href="/automat/index.html">HOME</a>.
+				</span>
+			</section>
+		</div>
+		<footer>
+<span class="copyright">©  Automat Berlin 2019</span>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/plugins/ScrollToPlugin.min.js"></script>
+	<script src="scripts.js"></script>
+	<script>
+				$(".menu-anchor").click(function(e) {
+
+   var wohin = $(this).attr("href");
+
+   if(wohin=="#factory"){
+    $(".menu").removeClass('active');
+    $("#hamburger-menu").removeClass('menu-open');
+
+   } else if (wohin=="#workshop"){
+    $(".menu").removeClass('active');
+    $("#hamburger-menu").removeClass('menu-open');
+   }
+
+ });
+		var menu = document.querySelector(".menu"),
+    toggle = document.querySelector(".menu-toggle");
+
+function toggleToggle() {
+  toggle.classList.toggle("menu-open");
+};
+
+function toggleMenu() {
+  menu.classList.toggle("active");
+};
+
+toggle.addEventListener("click", toggleToggle, false);
+toggle.addEventListener("click", toggleMenu, false);
+
+			
+	</script>
+	</footer>
+	</div>
+</body>   
+</html>
