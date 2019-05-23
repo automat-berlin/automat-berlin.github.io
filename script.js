@@ -1,12 +1,5 @@
 $(window).scroll(function () {
 	var scrollTop = $(window).scrollTop();
-	if (scrollTop >= 0.4 * $(window).height()) {
-		$("#factory").addClass('fixed');
-		$("#workshop").addClass('follow');
-	} else {
-		$("#factory").removeClass('fixed');
-		$("#workshop").removeClass('follow');
-	}
 
 	if (scrollTop > 100) {
 		$('.back-to-top').fadeIn();
