@@ -275,7 +275,6 @@ section {
 --------------------------------------------------------------*/
 .site-branding {
 	position:fixed;
-	width:15%;
 	overflow:hidden;
 	float:left;
 	_z-index:5;
@@ -411,7 +410,7 @@ section {
 }
 
 .hero-inner h1 {
-	width: 70%;
+	width: 75%;
 }
 
 .description{
@@ -808,14 +807,14 @@ ANIMATION
 	# MOBILE NAVIGATION
 	--------------------------------------------------------------*/
 	.main-navigation ul.menu {
+		display: none;
 		top: 0;
 		left: 0;
 		margin: 0;
 		z-index: -1;
 		width: 100%;
-		height:0;
+		height: 100vh;
 		overflow:hidden;
-		min-height:0vh;
 		padding: 110px 8.69vw  8.69vw 8.69vw;
 		background: #2843A2;
 		position: absolute;
@@ -823,8 +822,9 @@ ANIMATION
 		transition: all 0.5s ease-in-out;
 	}
 	.main-navigation ul.menu.active {
+		display: block;
 		opacity:1;
-		min-height:90vh;
+		height:100vh;
 		z-index: 1;
 		transition: all 0.5s ease-in-out;
 	}
