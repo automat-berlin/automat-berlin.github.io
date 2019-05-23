@@ -1,31 +1,61 @@
-$(document).ready(function() {
-	
-	setTimeout(function() {
-	  if( location.hash && $(location.hash).length > 0 ) { // if there is a hash in the URL and that ID exists on the page
-	    window.scrollTo(0, 0); // <- Keeps the page from jumping by default
-			    
-	    setTimeout( function() {
-	      TweenLite.to(window, 1, {scrollTo: $(location.hash).offset().top -120 });
-	    }, 500 ); // This is my delay so the smooth scroll doean't start immediately ... adjust to your needs
-	        
-	  }
-	}, 1);
+$(window).scroll(function () {
+	var scrollTop = $(window).scrollTop();
+	if (scrollTop >= 0.4 * $(window).height()) {
+		$("#factory").addClass('fixed');
+		$("#workshop").addClass('follow');
+	} else {
+		$("#factory").removeClass('fixed');
+		$("#workshop").removeClass('follow');
+	}
 
-	//  Bind scroll to anchor links
-	$(document).on("click", "a[href^=#]", function(e) {
-			e.preventDefault();
-	    var id = $(this).attr("href");
-	
-	    if($(id).length > 0) {
-	        e.preventDefault();
-	
-	        TweenLite.to(window, 1, {scrollTo: $(id).offset().top -120 });
-	
-	        // If supported by the browser we can also update the URL
-	        if (window.history && window.history.pushState) {
-	            history.pushState("", document.title, id);
-	        }
-	    };
+	if (scrollTop > 100) {
+		$('.back-to-top').fadeIn();
+	} else {
+		$('.back-to-top').fadeOut();
+	}
+});
+
+$(document).ready(function() {
+	$(".menu-anchor").click(function (e) {
+
+		var wohin = $(this).attr("href");
+
+		if (wohin == "#factory") {
+			$(".menu").removeClass('active');
+			$("#hamburger-menu").removeClass('menu-open');
+
+		} else if (wohin == "#workshop") {
+			$(".menu").removeClass('active');
+			$("#hamburger-menu").removeClass('menu-open');
+		}
+
 	});
-	
+	var menu = document.querySelector(".menu"),
+		toggle = document.querySelector(".menu-toggle");
+
+	function toggleToggle() {
+		toggle.classList.toggle("menu-open");
+	};
+
+	function toggleMenu() {
+		menu.classList.toggle("active");
+	};
+
+	toggle.addEventListener("click", toggleToggle, false);
+	toggle.addEventListener("click", toggleMenu, false);
+
+	var $backToTopButton = $('<a href="#top" class="back-to-top">Go to top</a>')
+		.hide()
+		.css({
+			zIndex: 9999
+		});
+
+	$('body').append($backToTopButton);
+
+	$('.back-to-top').click(function () {
+		$('body, html').animate({
+			scrollTop: 0
+		}, 800);
+		return false;
+	});
 });
