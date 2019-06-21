@@ -155,7 +155,7 @@ section#page-not-found h1 {
 	
 }
 section#page-not-found h1:before {
-	background: url(images/oops-404.svg);
+	background: url(/images/oops-404.svg);
 	background-size: cover;
 	content: '';
 	position: absolute;
@@ -238,7 +238,7 @@ section {
 	min-height:65vh;
 }
 .first {
-	background: url(images/right.svg);
+	background: url(/images/right.svg);
 	background-position: top 30% right 3%;
 	background-attachment:fixed;
 	background-size: auto 110px;
@@ -432,130 +432,130 @@ section {
 }
 
 .twitter {
-	background: url(images/twitter_blue.svg);
+	background: url(/images/twitter_blue.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .twitter:hover {
-	background: url(images/twitter_blue_hover.svg);
+	background: url(/images/twitter_blue_hover.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .facebook {
-	background: url(images/facebook_blue.svg);
+	background: url(/images/facebook_blue.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .facebook:hover {
-	background: url(images/facebook_blue_hover.svg);
+	background: url(/images/facebook_blue_hover.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .linkedin {
-	background: url(images/linkedin_blue.svg);
+	background: url(/images/linkedin_blue.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .linkedin:hover {
-	background: url(images/linkedin_blue_hover.svg);
+	background: url(/images/linkedin_blue_hover.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .github {
-	background: url(images/github_blue.svg);
+	background: url(/images/github_blue.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .github:hover {
-	background: url(images/github_blue_hover.svg);
+	background: url(/images/github_blue_hover.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .stackshare {
-	background: url(images/stackshare_blue.svg);
+	background: url(/images/stackshare_blue.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .stackshare:hover {
-	background: url(images/stackshare_blue_hover.svg);
+	background: url(/images/stackshare_blue_hover.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .keybase {
-	background: url(images/keybase_blue.svg);
+	background: url(/images/keybase_blue.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .keybase:hover {
-	background: url(images/keybase_blue_hover.svg);
+	background: url(/images/keybase_blue_hover.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .gitlab {
-	background: url(images/gitlab_blue.svg);
+	background: url(/images/gitlab_blue.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .gitlab:hover {
-	background: url(images/gitlab_blue_hover.svg);
+	background: url(/images/gitlab_blue_hover.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 #social-media-workshop .stackshare {
-	background: url(images/stackshare_white.svg);
+	background: url(/images/stackshare_white.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 #social-media-workshop .stackshare:hover {
-	background: url(images/stackshare_blue_hover.svg);
+	background: url(/images/stackshare_blue_hover.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 #social-media-workshop .github {
-	background: url(images/github_white.svg);
+	background: url(/images/github_white.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 #social-media-workshop .github:hover {
-	background: url(images/github_blue_hover.svg);
+	background: url(/images/github_blue_hover.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 #social-media-workshop .keybase {
-	background: url(images/keybase_white.svg);
+	background: url(/images/keybase_white.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 #social-media-workshop .keybase:hover {
-	background: url(images/keybase_blue_hover.svg);
+	background: url(/images/keybase_blue_hover.svg);
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .col-50.orange{
-	background-image:url(images/arrow_blue.svg);
+	background-image:url(/images/arrow_blue.svg);
 	background-position:top right;
 	background-size: 3.84vw;
 	background-repeat:no-repeat;
@@ -567,7 +567,7 @@ section {
 }*/
 
 .col-50.blue{
-	background-image:url(images/arrow_orange.svg);
+	background-image:url(/images/arrow_orange.svg);
 	background-position:bottom left;
 	background-size: 3.84vw;
 	background-repeat:no-repeat;
@@ -638,7 +638,7 @@ footer {
 	padding: 2% 5vw  2% 2% ;
 }
 .back-to-top {
-	background: url(images/backtotop.svg);
+	background: url(/images/backtotop.svg);
 	background-repeat: no-repeat;
 	background-size: 3.84vw;
 	color: rgba(0,0,0,0);
@@ -1045,11 +1045,11 @@ ANIMATION
 	}
 	
 	.col-50.orange{
-		background-image:url(images/arrow_down_blue.svg);
+		background-image:url(/images/arrow_down_blue.svg);
 		background-position:bottom right;
 	}
 	.col-50.blue{
-		background-image:url(images/arrow_down_orange.svg);
+		background-image:url(/images/arrow_down_orange.svg);
 		background-position:bottom right;
 		
 	}

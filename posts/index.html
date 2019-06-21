@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% assign posts_count = paginator.posts | size %}
+
+<div id="content" class="site-content">
+  <div class="col-60">
+    <h2>Blog</h2>
+
+    {% for post in paginator.posts %}
+
+    <article>
+      <header>
+        <time datetime="2017-02-14">{{ post.date | date: site.date_format }}</time>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+         <h3>{{ post.title }}</h3>
+        </a>
+
+        <p>
+          {% if post.summary %}
+           {{ post.summary }}
+          {% else %}
+           {{ post.excerpt }}
+          {% endif %}
+        </p>
+      </header>
+    </article>
+    {% endfor %}
+
+    {% include pagination.html %}
+  </div>
+</div>

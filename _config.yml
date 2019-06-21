@@ -1,0 +1,50 @@
+# Site settings
+title:       Automat Berlin GmbH
+email:       info@automat.berlin
+author:      Automat Berlin GmbH
+description: "Find senior software engineers, experienced agile practitioners and a valuable tech partner network at Automat Berlin. We code your solution!"
+baseurl:     ""
+url:         "/"
+date_format: "%b %-d, %Y"
+
+# Social icons
+github_username:
+bitbucket_username:
+stackoverflow_id:
+twitter_username:
+skype_username:
+steam_nickname:
+google_plus_id:
+linkedin_username:
+angellist_username:
+medium_id:
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+text:
+  post:
+    updated:        'Updated'
+    minute_read:    'minute read'
+    related_posts:  'Related Posts'
+  og_locale: 'en_US'
+
+# Build settings
+markdown:     kramdown
+kramdown:
+  default_lang: javascript
+  footnote_nr:  1
+  toc_levels:   1..6
+highlighter: rouge
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+paginate:     5
+paginate_path: "/posts/page:num/"
+sass:
+  compressed: true
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+# https://github.com/jekyll/jekyll/issues/2938
+exclude: [vendor]
