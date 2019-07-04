@@ -183,6 +183,11 @@ section#page-not-found h2 {
 }
 h3 {
 	margin: 20px 0 5px 0;
+	font-size: 22px;
+}
+
+h2 {
+	font-size: 37px;
 }
 
 section#page-not-found .description {
@@ -581,7 +586,18 @@ section {
 	display:inline;
 }
 
+/*--------------------------------------------------------------
+# BLOG
+--------------------------------------------------------------*/
 
+.date-orange {
+	font-size: 14px;
+	color: #F86C05;
+}
+
+.hr-blue {
+	border: 0.5px solid#2843A2;
+}
 
 /*--------------------------------------------------------------
 # IMPRINT
