@@ -613,6 +613,10 @@ section {
         background-position: center;
 }
 
+.pagination .pagination-item + .pagination-item {
+	margin-left: 30px;
+}
+
 .pagination-orange {
 	font-size: 16px;
 	color: #F86C05;
@@ -623,14 +627,6 @@ section {
 	font-size: 16px;
 	color: #C4C4C4;
 	text-decoration: none;
-}
-
-.pagination-left {
-	float: left;
-}
-
-.pagination-right {
-	float: right;
 }
 
 /*--------------------------------------------------------------
