@@ -4,7 +4,7 @@ email:       info@automat.berlin
 author:      Automat Berlin GmbH
 description: "Find senior software engineers, experienced agile practitioners and a valuable tech partner network at Automat Berlin. We code your solution!"
 baseurl:     ""
-url:         "/"
+url:         "http://automat.berlin"
 date_format: "%b %-d, %Y"
 
 # Social icons
@@ -48,3 +48,6 @@ gems:
   - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
+plugins:
+  - jekyll-sitemap
+  
