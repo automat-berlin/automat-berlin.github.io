@@ -4,7 +4,7 @@ email:       info@automat.berlin
 author:      Automat Berlin GmbH
 description: "Find senior software engineers, experienced agile practitioners and a valuable tech partner network at Automat Berlin. We code your solution!"
 baseurl:     ""
-url:         "http://automat.berlin"
+url:         "https://automat.berlin"
 date_format: "%b %-d, %Y"
 
 # Social icons
