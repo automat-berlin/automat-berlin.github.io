@@ -1,39 +1,23 @@
 <div class="pagination clearfix mb1 mt4">
-  <div class="pagination-left">
-    {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-    <a class="pagination-orange" href="{{ site.baseurl }}/">{{ site.text.pagination.newer }}</a>
-    {% else %}
-    <a class="pagination-orange" href="{{ paginator.previous_page_path }}">{{ site.text.pagination.newer }}</a>
-    {% endif %}
-    {% else %}
-    <span class="pagination-orange">{{ site.text.pagination.newer }}</span>
-    {% endif %}
-  </div>
-{% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}"><img src="images/prev-arrow-orange.svg"></a>
+  {% if paginator.previous_page %}
+    <a class="pagination-item" href="{{ paginator.previous_page_path | relative_url }}"><img src="images/prev-arrow-orange.svg"></a>
   {% else %}
-    <img src="images/prev-arrow-orange.svg">
+    <img class="pagination-item" src="images/prev-arrow-orange.svg">
   {% endif %}
-{% for page in (1..paginator.total_pages) %}
-{% if page == paginator.page %}
-    <span class="pagination-orange">{{ page }}</span>
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="pagination-item pagination-orange">{{ page }}</span>
     {% elsif page == 1 %}
-      <a class="pagination-grey" href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
+      <a class="pagination-item pagination-grey" href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
     {% else %}
-      <a class="pagination-grey" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      <a class="pagination-item pagination-grey" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
-{% endfor %}
-{% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}"><img src="images/next-arrow-orange.svg"></a>
+  {% endfor %}
+  
+  {% if paginator.next_page %}
+    <a class="pagination-item" href="{{ paginator.next_page_path | relative_url }}"><img src="images/next-arrow-orange.svg"></a>
   {% else %}
-    <img src="images/next-arrow-orange.svg">
+    <img class="pagination-item" src="images/next-arrow-orange.svg">
   {% endif %}
-  <div class="pagination-right">
-    {% if paginator.next_page %}
-    <a class="pagination-orange" href="{{ paginator.next_page_path }}">{{ site.text.pagination.older }}</a>
-    {% else %}
-    <span class="pagination-orange">{{ site.text.pagination.older }}</span>
-    {% endif %}
-  </div>
 </div>
