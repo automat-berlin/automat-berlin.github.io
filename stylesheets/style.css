@@ -599,6 +599,40 @@ section {
 	border: 0.5px solid#2843A2;
 }
 
+.prev-arrow {
+	background: url(/images/prev-arrow-orange.svg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+.next-arrow {
+	background: url(/images/next-arrow-orange.svg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+.pagination-orange {
+	font-size: 16px;
+	color: #F86C05;
+	text-decoration: none;
+}
+
+.pagination-grey {
+	font-size: 16px;
+	color: #C4C4C4;
+	text-decoration: none;
+}
+
+.pagination-left {
+	float: left;
+}
+
+.pagination-right {
+	float: right;
+}
+
 /*--------------------------------------------------------------
 # IMPRINT
 --------------------------------------------------------------*/

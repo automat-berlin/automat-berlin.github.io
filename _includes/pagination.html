@@ -1,39 +1,39 @@
 <div class="pagination clearfix mb1 mt4">
-  <div class="left">
+  <div class="pagination-left">
     {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-    <a class="pagination-item" href="{{ site.baseurl }}/">{{ site.text.pagination.newer }}</a>
+    <a class="pagination-orange" href="{{ site.baseurl }}/">{{ site.text.pagination.newer }}</a>
     {% else %}
-    <a class="pagination-item" href="{{ paginator.previous_page_path }}">{{ site.text.pagination.newer }}</a>
+    <a class="pagination-orange" href="{{ paginator.previous_page_path }}">{{ site.text.pagination.newer }}</a>
     {% endif %}
     {% else %}
-    <span class="pagination-item disabled">{{ site.text.pagination.newer }}</span>
+    <span class="pagination-orange">{{ site.text.pagination.newer }}</span>
     {% endif %}
   </div>
 {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}"><img src="images/prev-arrow-orange.svg"></a>
   {% else %}
-    <span>&laquo; Prev</span>
+    <img src="images/prev-arrow-orange.svg">
   {% endif %}
 {% for page in (1..paginator.total_pages) %}
 {% if page == paginator.page %}
-    {{ page }}
+    <span class="pagination-orange">{{ page }}</span>
     {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
+      <a class="pagination-grey" href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
     {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+      <a class="pagination-grey" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
 {% endfor %}
 {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path | relative_url }}"><img src="images/next-arrow-orange.svg"></a>
   {% else %}
-    <span>Next &raquo;</span>
+    <img src="images/next-arrow-orange.svg">
   {% endif %}
-  <div class="right">
+  <div class="pagination-right">
     {% if paginator.next_page %}
-    <a class="pagination-item" href="{{ paginator.next_page_path }}">{{ site.text.pagination.older }}</a>
+    <a class="pagination-orange" href="{{ paginator.next_page_path }}">{{ site.text.pagination.older }}</a>
     {% else %}
-    <span class="pagination-item disabled">{{ site.text.pagination.older }}</span>
+    <span class="pagination-orange">{{ site.text.pagination.older }}</span>
     {% endif %}
   </div>
 </div>
