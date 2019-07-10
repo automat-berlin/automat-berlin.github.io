@@ -9,7 +9,7 @@
     {% if page == paginator.page %}
       <span class="pagination-item pagination-orange">{{ page }}</span>
     {% elsif page == 1 %}
-      <a class="pagination-item pagination-grey" href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
+      <a class="pagination-item pagination-grey" href="/posts">{{ page }}</a>
     {% else %}
       <a class="pagination-item pagination-grey" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
