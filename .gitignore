@@ -1,3 +1,6 @@
 .idea/
 .DS_Store
 fonts/
+_site
+.sass-cache
+.jekyll-metadata
