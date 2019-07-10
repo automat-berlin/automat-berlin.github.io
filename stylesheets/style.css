@@ -214,7 +214,7 @@ section#page-not-found .description {
 	min-height:100vh;
 	position:relative;
 	float:left;
-	width:auto;
+	width:100%;
 }
 .site-header {
 	position:fixed;
