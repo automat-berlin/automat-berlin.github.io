@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div id="content" class="site-content">
-  <div class="col-60">
+  <div class="no-padding-top col-60">
 
 {% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
 {% if minutes == 0 %}

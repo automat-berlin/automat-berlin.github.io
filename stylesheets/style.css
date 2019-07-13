@@ -227,6 +227,7 @@ section#page-not-found .description {
 	background:#F6F6F6;
 	width: 100%;
 	float: left;
+	padding-top: 130px;
 }
 
 
@@ -632,6 +633,10 @@ section {
 .disclaimer-grey {
 	font-size: 14px;
 	color: #A4A4A4;
+}
+
+.no-padding-top {
+	padding-top: 0!important;
 }
 
 /*--------------------------------------------------------------
