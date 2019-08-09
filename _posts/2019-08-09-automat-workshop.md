@@ -8,7 +8,7 @@ This post is an initial introduction of the Automat Berlin **//workshop** setup.
 
 <!--more-->
 
-## Automat Berlin //workshop
+### Automat Berlin //workshop
 
 Automat Berlin started off introducing two work modes:
 - *//factory* where we focus on full-stack application development for our customers. We can quickly scale our team together with our long-term reliable partners.
@@ -38,9 +38,9 @@ For every supplementary function of CPaaS features that has the potential to be 
 In the following section, we will explain our adapter approach from a technical point of view.
 
 
-## //workshop in practice
+### //workshop in practice
 
-### //a flexible adapter concept
+#### //a flexible adapter concept
 
 From a high-level perspective, our software stack looks as follows on both client and server-side:
 
@@ -63,7 +63,7 @@ Besides supporting those, one of our aims is lowering the barrier for *everyone*
 
 The following section explains how we extended Node-RED, an open-source software tool that provides a GUI (Graphical User Interface), as universal API for CPaaS providers that do not offer it themselves yet or only a limited version respectively.
 
-### //a Node-RED extensions
+#### //a Node-RED extensions
 
 According to their website, Node-RED is "a programming tool for wiring together hardware devices, APIs, and online services in new and interesting ways." It enables the easy connection of functional nodes for mapping complex workflows. It comes with a base set of functions and has a broad "Palette" with many contributed modules.
 
@@ -76,4 +76,4 @@ The main complexity drivers (especially also for non-developers) are:
 
 We will make modules as well as workflows available in the future that make use of Node-RED and should remove all obstacles mentioned above for even non-developers to get started with CPaaS application development.
 
-In our next blog post, you will learn more about the first open-source module we have developed on top of the [sipgate.io](https://www.sipgate.io) Application Programming Interface (API) that [Sipgate](https://www.sipgate.de/wir-sind-sipgate) offers to any of their customers.
+In our next blog post, you will learn more about the first [open-source module](https://github.com/automat-berlin/node-red-contrib-sipgate) we have developed on top of the [sipgate.io](https://www.sipgate.io) Application Programming Interface (API) that [Sipgate](https://www.sipgate.de/wir-sind-sipgate) offers to any of their customers.
