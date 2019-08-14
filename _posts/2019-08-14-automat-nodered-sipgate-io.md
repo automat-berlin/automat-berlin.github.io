@@ -10,9 +10,9 @@ In this post, we present our first open-source contribution in the area of simpl
 
 ### //a workshop focus
 
-One of Automat Berlin's focal points is developing open-source based graphical extensions of Communications Platform as a Service (CPaaS) Application Programming Interfaces (APIs) for faster use case prototyping. We briefly [introduced](https://automat.berlin/2019/08/09/automat-workshop/) the graphical wiring tool Node-RED already.
+One of Automat Berlin's focal points is developing open-source based graphical extensions of Communications Platform as a Service (CPaaS) Application Programming Interfaces (APIs) for faster use case prototyping. We briefly [introduced](https://automat.berlin/2019/08/09/automat-workshop) the graphical wiring tool Node-RED already.
 
-In the following, we explain our first open-source contribution in the area of simplified CPaaS consumption. We have developed a module for the wiring tool Node-RED as introduced in our [previous post](https://automat.berlin/2019/08/09/automat-workshop/). It should help to create value-added services on top of [sipgate.io](https://www.sipgate.io) - the Application Programming Interface (API) [sipgate](https://www.sipgate.de) offers to all of their customers.
+In the following, we explain our first open-source contribution in the area of simplified CPaaS consumption. We have developed a module for the wiring tool Node-RED as introduced in our [previous post](https://automat.berlin/2019/08/09/automat-workshop). It should help to create value-added services on top of [sipgate.io](https://www.sipgate.io) - the Application Programming Interface (API) [sipgate](https://www.sipgate.de) offers to all of their customers.
 
 ### Node-RED for CPaaS development
 
@@ -52,9 +52,9 @@ Most of the nodes have configuration parameters. Some of them have flexible outp
 
 Besides singular nodes, some nesting for everyday use cases has been implemented (e.g., playing an audio file while gathering inputs). The sample RTCM method `hangup-call` is made available also.
 
-The package is available at [npm](https://www.npmjs.com/package/@automat-berlin/node-red-contrib-sipgate) as well as in the [Node-RED flow library](https://flows.nodered.org/node/@automat-berlin/node-red-contrib-sipgate).
+The package is available at [**npm**](https://www.npmjs.com/package/@automat-berlin/node-red-contrib-sipgate) as well as in the [**Node-RED flow library**](https://flows.nodered.org/node/@automat-berlin/node-red-contrib-sipgate).
 
-The source code is available [on our Github page](https://github.com/automat-berlin/node-red-contrib-sipgate).
+The source code is available on our [**Github page**](https://github.com/automat-berlin/node-red-contrib-sipgate).
 
 #### Sample
 

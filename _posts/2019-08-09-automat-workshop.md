@@ -4,7 +4,7 @@ title:  "Automat workshop mode - simpler, more flexible CPaaS consumption"
 excerpt_separator: <!--more-->
 ---
 
-This post is an introduction of the Automat Berlin **//workshop** setup. We will explain our approach to a more straightforward and more flexible consumption of various Communications Platform as a Service (CPaaS) providers and how we would like to improve developers choices conceptually. We explain our flexible adapter concept, and as a first practical example, we introduce the programming tool [Node-RED](https://nodered.org). We will show how we believe it may help to reduce the barrier for non-programmers to get started building applications on top of CPaaS infrastructures.
+This post introduces the Automat Berlin //workshop setup. We will explain our approach to consuming multiple CPaaS providers effectively and with less upfront decisions and hard choices for developers. We explain our flexible adapter concept and introduce [Node-RED](https://nodered.org) as first practical example. 
 
 <!--more-->
 
@@ -14,8 +14,12 @@ Automat Berlin started off introducing two work modes:
 - **//factory** where we focus on full-stack application development for our customers. We can quickly scale our team together with our long-term reliable partners.
 - **//workshop** where we focus on building software for communications applications and services in particular. We're happy about challenges with significant synergies in this area, and also regularly release open-source software supporting both developers and end-users in creating communications experiences.
 
+With Automat **//workshop**, we explain in the following our approach to a more straightforward and more flexible consumption of various Communications Platform as a Service (CPaaS) providers and how we would like to improve developers choices conceptually. We give an overview about our flexible adapter concept, and as a first practical example, we introduce the programming tool [Node-RED](https://nodered.org). We will show how we believe it may help to reduce the barrier for non-programmers to get started building applications on top of CPaaS infrastructures.
+
 One of the aims of our //workshop mode is to help develop the missing glue to support developers of communication applications. According to our experience in previous projects, it is still not trivial to consume communications services and the level of abstraction various quite a bit between providers. Especially for developers without a prior background of integrating communication services or features into their applications, hidden challenges exist (e.g., mapping APN/GCM with the communications backend or synchronization of data and states between multiple devices).
-We want to bridge this gap and free developers from the need of particular early choices with regards to their communications service provider. Whether it is for convenience, cost, reach, or simplicity - choices for "the right" CPaaS provider, are as manifold as they are differing. Moreover, we want to supplement the "bare" CPaaS features with components that we found useful over the years and that are lacking with most offerings.
+We want to bridge this gap and free developers from the need of particular early choices with regards to their communications service provider. Whether it is for convenience, cost, reach, or simplicity - choices for "the right" CPaaS provider are as manifold as they are differing.
+
+Moreover, we want to supplement the "bare" CPaaS features with components that we found useful over the years and that are lacking with most offerings.
 It is essential to understand that the //workshop concept does not aim at becoming yet another CPaaS provider. We instead want to simplify the interactions of developers with existing CPaaS providers.
 For us, this means:
 
@@ -76,4 +80,4 @@ The main complexity drivers (especially also for non-developers) are:
 
 We will make modules as well as workflows available in the future that make use of Node-RED and should remove all obstacles mentioned above for even non-developers to get started with CPaaS application development.
 
-In our next blog post, you will learn more about the first [open-source module](https://github.com/automat-berlin/node-red-contrib-sipgate) we have developed on top of the [sipgate.io](https://www.sipgate.io) Application Programming Interface (API) that [Sipgate](https://www.sipgate.de/wir-sind-sipgate) offers to any of their customers.
+In our [next blog post](https://automat.berlin/2019/08/14/automat-nodered-sipgate-io), you will learn more about the first [open-source module](https://github.com/automat-berlin/node-red-contrib-sipgate) we have developed on top of the [sipgate.io](https://www.sipgate.io) Application Programming Interface (API) that [sipgate](https://www.sipgate.de/wir-sind-sipgate) offers to any of their customers.
