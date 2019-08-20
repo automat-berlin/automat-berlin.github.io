@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 
 A few weeks earlier, we have [introduced //afone](https://automat.berlin/2019/07/11/afone-ios/), our reference VoIP implementation for iOS, with a flexible adapter architecture. Today we are announcing support for Twilio and ABTO.
 
-<!--more>
+<!--more-->
 
 Our adapter architecture allows us to exchange the used VoIP SDK effortlessly. Depending on which CPaaS provider you want to use or if you have decided to use your private VoIP backend, you need only to implement a few methods. We provide ready to use SIP adapters for PortSIP SDK, ABTO SDK, and for the first time also for the WebRTC based TwilioVoice SDK.
 
