@@ -12,7 +12,7 @@ Our adapter architecture allows us to exchange the used VoIP SDK effortlessly. D
 
 Twilio is the de-facto leader for CPaaS providers on the market as of today. The TwilioVoice SDK is WebRTC based as opposed to PortSIP and ABTO SDKs, but it is still straightforward to integrate into //afone using our adapter architecture. In our TwilioVoiceAdapter, we have decided to concentrate only on audio calls for simplicity's sake.
 
-ABTO is a SIP-based SDK, similar to PortSIP SDK. It is less complicated than other SIP SDKs and thus doesn't provide a  full //afone experience when it comes to video calls. We were told by ABTO support that this would change in a future release of ABTO SDK though.
+ABTO is a SIP-based SDK, similar to PortSIP SDK. It is less complicated than other SIP SDKs and thus does not provide a full //afone experience when it comes to video calls. We were told by ABTO support that this would change in a future release of ABTO SDK though.
 
 Please visit our [Github repository](https://github.com/automat-berlin/afone) for the implementation details.
 
