@@ -16,12 +16,10 @@ $(document).ready(function() {
 		if (goto == "#factory") {
 			$(".menu").removeClass('active');
 			$("#hamburger-menu").removeClass('menu-open');
-
 		} else if (goto == "#workshop") {
 			$(".menu").removeClass('active');
 			$("#hamburger-menu").removeClass('menu-open');
 		}
-
 	});
 	var menu = document.querySelector(".menu"),
 		toggle = document.querySelector(".menu-toggle");
