@@ -11,13 +11,13 @@ $(window).scroll(function () {
 $(document).ready(function() {
 	$(".menu-anchor").click(function (e) {
 
-		var wohin = $(this).attr("href");
+		var goto = $(this).attr("href");
 
-		if (wohin == "#factory") {
+		if (goto == "#factory") {
 			$(".menu").removeClass('active');
 			$("#hamburger-menu").removeClass('menu-open');
 
-		} else if (wohin == "#workshop") {
+		} else if (goto == "#workshop") {
 			$(".menu").removeClass('active');
 			$("#hamburger-menu").removeClass('menu-open');
 		}
