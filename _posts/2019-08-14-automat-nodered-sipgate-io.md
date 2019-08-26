@@ -62,27 +62,27 @@ We begin with the sample use case of creating an Interactive Voice Response (IVR
 
 In the sipgate.io portal, the inbound URL for the respective number is set to the specified `baseUrl` with the path of the `webhook` node appended.
 
-<img src="/images/nodered-sipgate-portal.jpg" alt="sipgate portal configuration" title="sipgate portal configuration" width="650px" />
+<img src="/images/blog/nodered-sipgate-portal.jpg" alt="sipgate portal configuration" title="sipgate portal configuration" width="650px" />
 
 The flow consists of nodes from our module (`gather`, `dial`), as well as default Node-RED nodes (`switch`).
 
-<img src="/images/nodered-sipgate-sample-overview.jpg" alt="Sample Flow - Overview" title="Sample Flow - Overview" width="650px" />
+<img src="/images/blog/nodered-sipgate-sample-overview.jpg" alt="Sample Flow - Overview" title="Sample Flow - Overview" width="650px" />
 
 The `input` node is used to specify the path of the webhook URL that is configured with sipgate.io.
 
-<img src="/images/nodered-sipgate-sample-webhook.jpg" alt="Sample Flow - webhook node" title="Sample Flow - webhook node" width="650px" />
+<img src="/images/blog/nodered-sipgate-sample-webhook.jpg" alt="Sample Flow - webhook node" title="Sample Flow - webhook node" width="650px" />
 
 The `gather` node is configured to play a voice prompt that has been created using [Google Cloud Platform (GCP) APIs](https://github.com/automat-berlin/gists/blob/master/google-tts-sipgate.sh). The node is configured to collect a single digit within 20s.
 
-<img src="/images/nodered-sipgate-sample-gather.jpg" alt="Sample Flow - gather node" title="Sample Flow - gather node" width="650px" />
+<img src="/images/blog/nodered-sipgate-sample-gather.jpg" alt="Sample Flow - gather node" title="Sample Flow - gather node" width="650px" />
 
 The input of the calling party is passed to the `switch` node. Depending on the value, the correct output is selected, and the respective family member is called.
 
-<img src="/images/nodered-sipgate-sample-switch.jpg" alt="Sample Flow - switch node" title="Sample Flow - switch node" width="650px" />
+<img src="/images/blog/nodered-sipgate-sample-switch.jpg" alt="Sample Flow - switch node" title="Sample Flow - switch node" width="650px" />
 
 The `dial` node connects both parties.
 
-<img src="/images/nodered-sipgate-sample-dial.jpg" alt="Sample Flow - dial node" title="Sample Flow - dial node" width="650px" />
+<img src="/images/blog/nodered-sipgate-sample-dial.jpg" alt="Sample Flow - dial node" title="Sample Flow - dial node" width="650px" />
 
 ### Outlook
 

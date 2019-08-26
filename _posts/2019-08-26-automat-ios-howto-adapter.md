@@ -18,7 +18,7 @@ The adapter is a software layer that connects the VoIP backend with the apps int
 
 First, let's create a new Swift file in the //afone Xcode project in the `VoIP Adapters` section and call it `MyAdapter`.
 
-<img src="/images/Xcode-create-MyAdapter.png" alt="Xcode - Create MyAdapter" title="Xcode - Create MyAdapter" width="650px" />
+<img src="/images/blog/Xcode-create-MyAdapter.png" alt="Xcode - Create MyAdapter" title="Xcode - Create MyAdapter" width="650px" />
 
 Our `MyAdapter` class needs to conform to //afone's `VoIPManagerDelegate` and to the event protocol of your VoIP SDK. Make sure to include your VoIP SDK in the project beforehand.
 
@@ -124,7 +124,7 @@ and
 
 When in //afone Settings, the user can tap on a list of codecs you prepared to select.
 
-<img src="/images/afone-settings-view.png" alt="//afone Settings" title="afone Settings" width="200"/>
+<img src="/images/blog/afone-settings-view.png" alt="//afone Settings" title="afone Settings" width="200"/>
 
 When the user taps to select or unselect a codec the
 
