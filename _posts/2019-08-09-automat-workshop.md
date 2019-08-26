@@ -48,18 +48,18 @@ In the following section, we will explain our adapter approach from a technical 
 
 From a high-level perspective, our software stack looks as follows on both client and server-side:
 
-![Automat Berlin Client/Server Stack Approach](/images/workshop-concept.svg "Automat Berlin Client/Server Stack Approach")
+![Automat Berlin Client/Server Stack Approach](/images/blog/workshop-concept.svg "Automat Berlin Client/Server Stack Approach")
 
 - The client-side SDKs permit an easy switch of the communications stack when integrating with the Automat SDK thin integration layer. An applied sample of this is our first open-source release [//afone](https://automat.berlin/2019/07/11/afone-ios/).
 - As server-side functions, we also offer the feature to consume CPaaS services as well as process their respective responses. Input/Output is normalized and accessible for further processing.
 
 It follows the same concept on the API and SDK, i.e., to act as an adapter between a generically exposed interface and the specific services.
 
-![Automat Berlin Adapter](/images/workshop-conversion.svg "Automat Berlin Adapter")
+![Automat Berlin Adapter](/images/blog/workshop-conversion.svg "Automat Berlin Adapter")
 
 It works with a single or multiple underlying providers and the logic when to chose which provider can either be controlled by the developer, so some external algorithm (e.g., a Least Cost Routing (LCR) function). Functions from various CPaaS providers can also be mixed when integrating with the adapter. In the future, we also plan to integrate relevant open-source software to expose the Automat API also for platforms that are currently not able to provide classic CPaaS APIs (e.g., Kamailio, Asterisk).
 
-![CPaaS Aggregation](/images/workshop-adapter.svg "CPaaS Aggregation")
+![CPaaS Aggregation](/images/blog/workshop-adapter.svg "CPaaS Aggregation")
 
 All of these efforts should lead to more transparency in the CPaaS market and more options and more flexibility to their consumers. It all contributes to our goal to more freedom, flexibility, and openness. It is however still focused on developers, i.e., programmers of applications, directly.
 
