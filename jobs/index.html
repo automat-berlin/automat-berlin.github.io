@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div id="content" class="site-content">
+  <div class="col-60">
+    <h2>Jobs</h2>
+
+    {% for job in site.jobs %}
+
+    <article>
+      <header>
+        <a href="{{ job.url | prepend: site.baseurl }}" class="job-link">
+         <h3>{{ job.title }}</h3>
+        </a>
+
+        <p>
+          {{ job.excerpt }}
+        </p>
+      </header>
+    </article>
+    <br/>
+    {% endfor %}
+  </div>
+</div>
