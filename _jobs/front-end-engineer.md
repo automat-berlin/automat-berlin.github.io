@@ -34,5 +34,3 @@ We appreciate the following **general capabilities**:
 *   team-player in remote/distributed setting
 *   savvy in video-conference-meetings
 *   eager to learn new technologies
-
-The recruitment process is mostly based on two screenings: one with The WorkinGroup and the second with client.
