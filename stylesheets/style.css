@@ -2,7 +2,7 @@
 Author URI: https://designerei.berlin
 Description: Konzeption & Gestaltung | Technische Umsetzung: Designerei.berlin Maggie Arndt & Judith André GbR | Katzbachstraße 32 | 10965 Berlin
 
-Domain: automat - Software developing company and a partner network. 
+Domain: automat - Software developing company and a partner network.
 Tags: agile, software, toolchain, open source, escribing coverage, ops platforms, modus operandi, Fullstack, mobile app, PWA, micro service backends AWS, Google cloud, MS Azure, Kanban, Scrum
 */
 
@@ -14,12 +14,12 @@ Tags: agile, software, toolchain, open source, escribing coverage, ops platforms
 	font-family: UniNeueRegular;
 	src:  url(https://assets.automat.berlin/webfonts/UniNeueRegular.ttf) format('truetype'),
 	url(https://assets.automat.berlin/webfonts/UniNeueRegular.otf) format('otf');
-	
+
 }
 @font-face {
 	font-family: UniNeueHeavy;
 	src:  url(https://assets.automat.berlin/webfonts/UniNeueHeavy.ttf) format('truetype'),
-	url(https://assets.automat.berlin/webfonts/UniNeueHeavy.otf) format('otf'); 
+	url(https://assets.automat.berlin/webfonts/UniNeueHeavy.otf) format('otf');
 }
 /*--------------------------------------------------------------
 # NORMALIZE
@@ -78,12 +78,12 @@ strong {
 --------------------------------------------------------------*/
 html {
 	box-sizing: border-box;
-	
+
 }
 
 *,
 *:before,
-*:after { 
+*:after {
 	box-sizing: inherit;
 }
 
@@ -151,7 +151,7 @@ section#page-not-found h1 {
 	font-size: 13vw;
 	margin: 13% 0 0 0;
 	line-height:1;
-	
+
 }
 section#page-not-found h1:before {
 	background: url(/images/oops-404.svg);
@@ -162,7 +162,7 @@ section#page-not-found h1:before {
 	height: 10vw;
 	margin-top: -10vw;
 	margin-left: 20vw;
-	
+
 }
 
 h2 {
@@ -191,7 +191,7 @@ h2 {
 
 section#page-not-found .description {
 	font-size:1.5vw;
-	
+
 }
 
 /*--------------------------------------------------------------
@@ -253,8 +253,8 @@ section {
 }
 .hero-inner {
 	position:fixed;
-	
-	
+
+
 }
 
 
@@ -264,7 +264,7 @@ section {
 }
 .white {
 	background-color:#fff;
-	
+
 }
 
 .blue {
@@ -314,7 +314,7 @@ section {
 }
 .main-navigation ul > li > a:hover,.main-navigation ul > li > a.active {
 	/*text-decoration:underline;*/
-	
+
 }
 
 
@@ -425,7 +425,7 @@ section {
 	flex-direction:row;
 	align-items: stretch;
 	justify-content: left;
-	
+
 }
 
 .socials a {
@@ -565,11 +565,11 @@ section {
 	background-position:top right;
 	background-size: 3.84vw;
 	background-repeat:no-repeat;
-	overflow: hidden; /* Veränderung */ 
+	overflow: hidden; /* Veränderung */
 }
 
 /*#overlay{
-	
+
 }*/
 
 .col-50.blue{
@@ -646,13 +646,13 @@ section#imprint {
 	width:100%;
 	float:left;
 	display:block;
-	
+
 }
 .col-60 {
 	padding: 7.68vw 0 3.84vw 8.69vw;
 	width:60%!important;
 	float:left;
-	
+
 }
 
 address {
@@ -673,8 +673,8 @@ section#page-not-found .description {
 	text-align:center;
 	float:none!important;
 	padding:0;
-	
-	
+
+
 }
 
 /*--------------------------------------------------------------
@@ -765,7 +765,7 @@ ANIMATION
 	from {
 		opacity: 0;
 	}
-	
+
 	to {
 		opacity: 1;
 	}
@@ -774,7 +774,7 @@ ANIMATION
 	from {
 		opacity: 0;
 	}
-	
+
 	to {
 		opacity: 1;
 	}
@@ -790,7 +790,7 @@ ANIMATION
 
 
 @media screen and (max-width:1024px) {
-	
+
 	/*--------------------------------------------------------------
 	# TYPO
 	--------------------------------------------------------------*/
@@ -799,30 +799,30 @@ ANIMATION
 	}
 	h4 {
 		font-size:16px;
-		
+
 	}
 	h1 {
 		font-size:36px;
 	}
-	
-	
+
+
 	section#page-not-found h1 {
 		font-size:150px;
 	}
-	
-	
+
+
 	h2 {
 		font-size:40px;
-		
+
 	}
-	
+
 	section#page-not-found h2 {
 		font-size:80px;
 	}
-	
+
 	section#page-not-found .description {
 		font-size:20px;
-		
+
 	}
 
 	.hero-inner {
@@ -843,7 +843,7 @@ ANIMATION
 		z-index:99;
 		padding: 6vw 0 0 8.69vw;
 	}
-	
+
 	/*--------------------------------------------------------------
 	# MOBILE NAVIGATION
 	--------------------------------------------------------------*/
@@ -888,7 +888,7 @@ ANIMATION
 		text-decoration: none;
 		transition: all 0.2s ease-in-out;
 	}
-	
+
 	.border-animation {
 		display: inline-block;
 		color: #fff;
@@ -902,7 +902,7 @@ ANIMATION
 		background: #fff;
 		transition: width .3s;
 	}
-	
+
 	.menu-toggle {
 		display:block;
 		top: 6vw;
@@ -964,17 +964,17 @@ ANIMATION
 	}
 	.menu-toggle.menu-open:hover::before,  .menu-toggle.menu-open:active::before {
 		top: 9px;
-		
+
 		-webkit-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 	}
 	.menu-toggle.menu-open:hover::after,  .menu-toggle.menu-open:active::after {
-		
+
 		bottom: 9px;
 		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
 	}
-	
+
 	.menu-toggle:active span {
 		background: rgba(255, 255, 255, 0);
 	}
@@ -990,12 +990,12 @@ ANIMATION
 		-webkit-transform: rotate(-45deg);
 		transform: rotate(-45deg);
 	}
-	
+
 	section#page-not-found {
 		min-height: 90vh;
 		margin-top: 20vh;
 	}
-	
+
 	.hero-inner {
 		width: 90%;
 	}
@@ -1014,24 +1014,24 @@ ANIMATION
 		padding: 7.68vw 40px 3.84vw 8.69vw;
 		width:100%!important;
 		float:left;
-		
+
 	}
 	.col-50.orange, .col-50.blue {
 		background-size: 40px;
-		
+
 	}
 	.col-50 img {
 		width: 90%;
-		
+
 	}
 }
 
 
 @media screen and (max-width:600px) {
-	
+
 	#imprint h2 {
 		font-size:25px;
-		
+
 	}
 	section#page-not-found h1 {
 		font-size: 100px;
@@ -1052,21 +1052,21 @@ ANIMATION
 	section#workshop {
 		flex-direction: column-reverse;
 	}
-	
+
 	.site-header {
 		height: 90px;
 	}
-	
+
 	.site-branding {
 		width: 50%;
-	}	
+	}
 	.main-navigation li:nth-of-type(1), .main-navigation li:nth-of-type(2){
 		_display:none;
 	}
 	.main-navigation ul > li > a {
 		padding: 0 10px;
-	} 
-	
+	}
+
 	.hero-inner {
 		position: relative;
 		width: 100%;
@@ -1086,7 +1086,7 @@ ANIMATION
 		display: block;
 		margin:0;
 	}
-	
+
 	.socials a{
 		background-position:left!important;
 		display:inline-block;
@@ -1097,9 +1097,9 @@ ANIMATION
 		width:100%;
 		float:left;
 		padding: 20vw 7vw 20vw 8.69vw;
-		
+
 	}
-	
+
 	.col-50.orange{
 		background-image:url(/images/arrow_down_blue.svg);
 		background-position:bottom right;
@@ -1107,7 +1107,7 @@ ANIMATION
 	.col-50.blue{
 		background-image:url(/images/arrow_down_orange.svg);
 		background-position:bottom right;
-		
+
 	}
 	.small-orange {
 		display:block!important;
@@ -1133,7 +1133,7 @@ ANIMATION
 	}
 }
 
-@media screen and (max-width:320px) {	
+@media screen and (max-width:320px) {
 	h1 {
 		font-size:32px;
 	}

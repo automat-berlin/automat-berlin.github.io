@@ -4,11 +4,11 @@ This repository contains the code for https://automat.berlin corporate website. 
 
 ## How to
 
-See https://pages.github.com/ for further descriptions on how to set up and host websites like this one.## Built With
+See https://pages.github.com/ for further descriptions on how to set up and host websites like this one.
 
 ## Languages used
 
-This website is done by using JS, HTML and CSS.
+This website is done by using HTML, CSS, JS and powered by [Jekyll](https://github.com/jekyll/jekyll).
 
 ## License
 

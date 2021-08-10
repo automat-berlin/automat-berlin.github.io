@@ -29,6 +29,10 @@ text:
     related_posts:  'Related Posts'
   og_locale: 'en_US'
 
+collections:
+  jobs:
+    output: true
+
 # Build settings
 markdown:     kramdown
 kramdown:
@@ -44,10 +48,10 @@ paginate_path: "/posts/page:num/"
 sass:
   compressed: true
 gems:
-  - jekyll-paginate
   - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
 plugins:
+  - jekyll-paginate
   - jekyll-sitemap
-  
+

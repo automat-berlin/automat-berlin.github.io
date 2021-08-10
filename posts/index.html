@@ -13,7 +13,7 @@ layout: default
     <article>
       <header>
         <div class="date-orange">
-        <time datetime="2017-02-14">{{ post.date | date: site.date_format }}</time>
+        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: site.date_format }}</time>
         </div>
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
          <h3>{{ post.title }}</h3>
