@@ -6,7 +6,8 @@ layout: default
   <div class="col-60">
     <h2>Jobs</h2>
 
-    {% for job in site.jobs %}
+    {% assign sorted_jobs = site.jobs | sort: "title" %}
+    {% for job in sorted_jobs %}
 
     <article>
       <header>
